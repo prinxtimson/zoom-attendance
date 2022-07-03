@@ -78,7 +78,7 @@ if ( ! class_exists( 'Zoom_Attendance_Api' ) ) {
 			$request_url = $this->api_url . $calledFunction;
 			$args        = array(
 				'headers' => array(
-					'Authorization' => 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Ik01U2xpNV9mUWZXSEp5allLM200bmciLCJleHAiOjE3NjEzOTIxNjAsImlhdCI6MTYzNTE1NjQ2MX0.6tL3uiwqe8L5mmWk3t8Ek_zQIwZcBJmAkRT0bBtEABg',
+					'Authorization' => 'Bearer '.getenv('TRITEK_TOKEN'),
 					'Content-Type'  => 'application/json'
 				)
 			);
